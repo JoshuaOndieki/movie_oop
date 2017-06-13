@@ -6,19 +6,19 @@ class Movie():
         Name: A string representing the movie's name.
         length: An integer representing running time of the movie.
     """
-    def shoot(self):
-        self.done_shooting = True
-        return self.name + " Status: Shooting successful!"
-
 
     def __init__(self, name, length):
         self.name = name
         self.length = length
-        self.done_shooting = False
-        shoot()
+        # self.done_shooting = False
+        # shoot()
+
+    # def shoot(self):
+    #     self.done_shooting = True
+    #     return self.name + " Status: Shooting successful!"
 
     def play(self):
-        return self.name + " is Playing. Length: " + self.length
+        return str(self.name) + " is Playing. Length: " + str(self.length)
 
 class Comedy(Movie):
     """ A comedy is a movie which is usually filled with jokes and
@@ -26,16 +26,16 @@ class Comedy(Movie):
     """
 
     def play(self):
-        return "Start laughing already because " + self.name + \
-        " is not going to spare your ribs!\n Length: " + self.length
+        return "Start laughing already because " + str(self.name) + \
+        " is not going to spare your ribs!\n Length: " + str(self.length)
 
 class Horror(Movie):
     """An horror is a scary movie
     """
 
     def play(self):
-        return "Don't dare watch " + selfname +" alone HUMAN! " \
-        "\n Length: " + self.length
+        return "Don't dare watch " + str(self.name) +" alone HUMAN! " \
+        "\n Length: " + str(self.length)
 
 class RealityShow(Movie):
     """A reality show, always a boring movie! Nothing to say.
