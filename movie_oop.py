@@ -10,12 +10,6 @@ class Movie():
     def __init__(self, name, length):
         self.name = name
         self.length = length
-        # self.done_shooting = False
-        # shoot()
-
-    # def shoot(self):
-    #     self.done_shooting = True
-    #     return self.name + " Status: Shooting successful!"
 
     def play(self):
         return str(self.name) + " is Playing. Length: " + str(self.length)
